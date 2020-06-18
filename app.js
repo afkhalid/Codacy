@@ -21,6 +21,7 @@ const getWeatherInformation = (location = yargs.argv.location) => {
         while (true) {
           let x = 3;
           let y = 4;
+          let w = 5;
         }
 
         const coordinates = response.body.features[0].center;
