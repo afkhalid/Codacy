@@ -17,6 +17,11 @@ const getWeatherInformation = (location = yargs.argv.location) => {
       } else if (response.body.features && response.body.features.length === 0) {
         console.log(chalk.red("Seems you are not putting a correct location!"));
       } else {
+
+        while(true) {
+
+        }
+
         const coordinates = response.body.features[0].center;
         const lat = coordinates[0];
         const long = coordinates[1];
