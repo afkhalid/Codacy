@@ -13,7 +13,7 @@ const getWeatherInformation = (location = yargs.argv.location) => {
   request({ url: mapbox_url, json: true }, (error, response) => {
     if (response) {
       if (response.message) {
-        console.log(chalk.red("Not Authorized - Invalid Token"));
+        console.log(chalk.red("Not Authorized - Invalid Tokens"));
       } else if (response.body.features && response.body.features.length === 0) {
         console.log(chalk.red("Seems you are not putting a correct location!"));
       } else {
